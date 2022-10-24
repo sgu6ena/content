@@ -1,7 +1,9 @@
 ---
 pinned:
-  - html/screenreaders
+  - a11y/chto-takoe-a11y
 ready:
+  - a11y/skip-link
+  - a11y/aria-labelledby
   - html/img
   - html/article
   - html/form
@@ -51,54 +53,56 @@ ready:
   - tools/ci-cd
   - recipes/snow
 active:
-  - html/screenreaders
-  - tools/static-types
-  - tools/cli
-  - css/media
-  - js/how-to-test-and-why
-  - js/how-the-browser-creates-pages
-  - js/function
-  - tools/markdown
-  - css/custom-properties
-  - tools/docker
-  - js/function-context
-  - css/box-model
-  - js/closures
-  - tools/webpack
-  - tools/ci-cd
-  - js/async-in-js
-  - html/img
-  - css/position
-  - js/boolean
-  - tools/agile
-  - css/keyframes
-  - css/grid-guide
-  - tools/gitlab-ci-cd
+  - a11y/chto-takoe-a11y
   - tools/network
-  - html/section
-  - recipes/snow
-  - js/execution-order
   - tools/bundlers
+  - recipes/snow
+  - html/nav
+  - css/position
+  - html/doctype
+  - css/specificity
+  - css/box-model
+  - css/display
+  - js/function-context
+  - css/media
+  - css/grid-guide
   - css/flexbox-guide
+  - css/keyframes
+  - html/input
+  - js/var-let
+  - js/oop
+  - html/form
+  - js/closures
+  - css/attr
+  - css/transform-function
+  - tools/webpack
+  - js/clean-architecture
+  - html/section
+  - html/img
+  - tools/ci-cd
+  - html/flow
+  - a11y/aria-labelledby
+  - tools/agile
+  - js/how-the-browser-creates-pages
+  - js/infinite-scroll
   - html/article
+  - css/pseudoelements
   - html/video
   - js/deal-with-forms
-  - html/head
-  - html/doctype
-  - js/infinite-scroll
   - html/div
-  - html/flow
-  - js/oop
-  - css/pseudoelements
-  - css/transform-function
-  - js/var-let
-  - css/attr
+  - js/how-to-test-and-why
+  - js/execution-order
+  - js/async-in-js
+  - tools/gitlab-ci-cd
+  - css/custom-properties
+  - tools/markdown
+  - a11y/skip-link
+  - js/function
+  - js/boolean
+  - tools/static-types
+  - html/head
+  - tools/docker
   - css/box-shadow
-  - js/clean-architecture
-  - css/specificity
-  - html/nav
-  - html/form
-  - html/input
-  - css/display
+  - tools/cli
 ---
 

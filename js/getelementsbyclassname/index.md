@@ -37,7 +37,7 @@ tags:
 
       const divEl = document.getElementById('title')
       // ищем параграфы внутри div:
-      const paragraphsFromDiv = document.getElementsByClassName('paragraph')
+      const paragraphsFromDiv = divEl.getElementsByClassName('paragraph')
       console.log(paragraphsFromDiv.length)
       // напечатает 1, так как внутри div только один элемент с классом paragraph
 
@@ -56,7 +56,7 @@ tags:
 </html>
 ```
 
-## Как это понять
+## Как понять
 
 Метод работает с [DOM](/js/dom/), который связан с HTML-разметкой. Каждый HTML-элемент имеет родительские и дочерние элементы:
 

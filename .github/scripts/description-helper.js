@@ -4,7 +4,7 @@ const fs = require('fs')
 const args = process.argv.slice(2)
 const ghKey = args.includes('--github-key') ? args[args.indexOf('--github-key') + 1] : false
 
-const issueHeaderText = `## Список статей со статусом дескрипшена:
+const issueHeaderText = `## Список статей без дескрипшена:
 
 `
 
@@ -12,14 +12,16 @@ const issueNumberToChapter = {
   css: 3009,
   html: 3008,
   js: 3010,
-  tools: 3011
+  tools: 3011,
+  a11y: 3955,
 }
 
 const issueLists = {
   css: [],
   html: [],
   js: [],
-  tools: []
+  tools: [],
+  a11y: [],
 }
 
 const printItem = (fileName, title, isChecked, isPlaceholder) => {
@@ -36,9 +38,7 @@ if (ghKey) {
       if (fileName.indexOf(chapter) == 0) {
         const hasDescription = metaKeys.includes('description') && metaKeys['description'] !== ""
         const item = printItem(fileName, meta.title, hasDescription, meta.tags ? meta.tags.includes('placeholder') : false)
-        if (hasDescription) {
-          issueLists[chapter].pop(item)
-        } else {
+        if (!hasDescription) {
           issueLists[chapter].push(item)
         }
       }

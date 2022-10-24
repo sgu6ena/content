@@ -8,8 +8,11 @@ contributors:
 editors:
   - tachisis
 keywords:
-  - section
   - секция
+related:
+  - html/body
+  - html/h1-h6
+  - html/header
 tags:
   - doka
 ---
@@ -32,7 +35,7 @@ tags:
 </section>
 ```
 
-## Как это понять
+## Как понять
 
 В `<section>` помещаются важные для поисковика элементы, для которых не нашлось подходящего тега вроде [`<img>`](/html/img/) или [`<header>`](/html/header/).
 
